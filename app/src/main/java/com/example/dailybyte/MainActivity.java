@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
         categoryRVAdapter=new CategoryRVAdapter(categoryRVModalArrayList,this,this::onCategoryClick);
         newsRV.setLayoutManager(new LinearLayoutManager(this));
         newsRV.setAdapter(newsRVAdapter);
+        //no need for categoryRV.setLayout , coz its already defined in xml file.
         categoryRV.setAdapter(categoryRVAdapter);
         getCategories();
         getNews("All");
